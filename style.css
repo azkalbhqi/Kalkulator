@@ -1,0 +1,371 @@
+body{
+    background: #1c1c1c;
+    overflow-x: hidden;
+}
+
+
+nav{
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    padding: 5px 20px;
+    font-family: sans-serif;
+    align-items: center;
+    margin: none;
+    background-color: black;
+}
+
+.judul{
+    border: 5px cyan solid;
+    border-style: outset;
+    width: 290px;
+    text-align: center;
+    color: rgb(216, 216, 216);
+    background-color: #130b47;
+
+}
+
+.judul:hover{
+    color: white;
+
+}
+
+.logo{
+    color: rgb(224, 224, 224);
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    letter-spacing: 2px;
+        
+}
+
+nav ul{
+    display: flex;
+    width: 30%;
+
+}
+nav ul li:not(.active){
+    justify-content: space-between;
+    margin: 5px;
+    list-style: none;
+    
+    
+    
+}
+
+nav ul li a:not(.active){
+    color: white;
+    text-decoration: none;
+    font: 15px;
+    border: 2px cyan solid;
+    padding: 5px;
+    background-color: #130b47;
+    
+}
+
+.active{
+    list-style: none;
+    background-color: cyan;
+    text-decoration: none;
+    font: 15px;
+    border: 2px cyan solid;
+    padding: 5px;
+
+}
+
+nav ul li a:hover:not(.active){
+    color: black;
+    text-decoration: none;
+    font: 20px;
+    border: 3px cyan solid;
+    background: cyan;
+    padding: 5px;
+    transition: 0.1s;
+    
+}
+
+nav ul li .active:hover{
+    color: white;
+    padding: 10px;
+    background-color: #130b47;
+    border: 1px #130b47 solid;
+    
+}
+
+.container{
+    margin-top: 130px;
+    margin-left: 35%;
+    position: absolute;
+    background: transparent;
+}
+.button{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin: 2px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    background: #130b47;
+    border: solid white 1px;
+
+}
+.buttonx{
+    width: 50px;
+    height: 120px;
+    font-size: 30px;
+    margin: 2px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    background: #130b47;
+    border: solid white 1px;
+
+}
+.buttony{
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    margin: 2px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    background: #130b47;
+    border: solid white 1px;
+
+}
+
+.button:hover{
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    margin: 2px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    background: #130b47;
+    border: solid #00FFFF 5px;
+    
+    
+}
+.buttonx:hover {
+    width: 50px;
+    height: 120px;
+    font-size: 35px;
+    margin: 2px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    background: #130b47;
+    border: solid #00FFFF 5px;
+}
+.buttony:hover{
+    width: 100px;
+    height: 50px;
+    font-size: 35px;
+    margin: 2px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    background: #130b47;
+    border: solid #00FFFF 5px;
+}
+.hasil{
+    width: 220px;
+    height: 50px;
+    color: white;
+    font-size: 35px;
+    background: #121259;
+    border: solid #00FFFF 5px;
+}
+.hasil:hover{
+    width: 220px;
+    height: 50px;
+    color: white;
+    font-size: 35px;
+    background: #0f0f4a;
+    border: solid #2684ff 5px;
+}
+
+/*CSS FOR TRIANGLE CAL*/
+
+.inputtr{
+    width: 270px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background: #121259;
+    border: solid #00FFFF 5px;
+    margin: 5px;
+
+}
+
+.inputtr:hover{
+    width: 270px;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    background: #121259;
+    border: solid #2684ff 5px;
+}
+
+.hasiltr{
+    width: 270px;
+    height: 30px;
+    color: white;
+    font-size: 25px;
+    background: #121259;
+    border: solid #00FFFF 5px;
+    margin: 5px;
+
+}
+
+.button2{
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    margin: 2px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    background: #130b47;
+    border: solid white 1px;
+}
+.button2:hover{
+    width: 150px;
+    height: 50px;
+    font-size: 32px;
+    margin: 2px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    background: #130b47;
+    border: solid #00FFFF 5px;
+}
+/* Hamburger Menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -9px;
+    top: -9px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+    
+    
+}
+
+/* Hamburger Menu Animation */
+.menu-toggle span:nth-child(2){
+
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+
+    transform: rotate(45deg) translate(2px , 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+
+    transform: rotate(-45deg) translate(1px , 0);
+}
+
+/* dissapearing middle span */
+.menu-toggle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+}
+
+
+/* Responsive BreakPoint */
+
+/* Smartphone */
+
+@media screen and (max-width: 576px) {
+    nav{
+        width: 93%;
+    }
+    nav ul {
+        position: absolute;
+        margin-top: 70px;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        height: 200px;
+        width: 50%;
+        align-items: center;
+        transition: all 1s;
+        transform: translateX(100%);
+        opacity: 0;
+        z-index: 2;
+        
+        background-color: black;
+    }   
+    
+    nav ul li:not(.active){
+        border: none;
+        height: 40px;
+        width: 100%;
+        /* left: -10px; */
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5px;
+        margin: 1px;
+        margin-right: 35px;
+
+        
+        
+
+        background-color: black;
+        
+    }
+
+    nav ul li a:not(.active){
+        border: none;
+        background-color: black;
+        align-items: center;
+        padding: none;
+        
+        
+        
+        
+
+    }
+
+    .active{
+        border: none;
+        background-color: black;
+        color: white;
+    }
+
+    nav ul.slide{
+        transform: translateX(0);
+        opacity: 1;
+        
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
