@@ -1,6 +1,6 @@
 body{
     background: #1c1c1c;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 
@@ -89,6 +89,8 @@ nav ul li .active:hover{
     border: 1px #130b47 solid;
     
 }
+
+/* Container */
 
 .container{
     margin-top: 130px;
@@ -301,7 +303,9 @@ nav ul li .active:hover{
 
 /* Smartphone */
 
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 980px) {
+    
+
     nav{
         width: 93%;
     }
